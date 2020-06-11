@@ -1,0 +1,6 @@
+package www.dulceadiccion.cl
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
