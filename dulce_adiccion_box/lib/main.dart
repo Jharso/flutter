@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(new BoxApp());
 }
 
@@ -23,7 +23,7 @@ class BoxApp extends StatelessWidget {
           backgroundColor: Colors.white,
         ),
         body: Center(
-          child: DaFolder('https://www.instagram.com/p/CBPO-BkB1Ck'),
+          child: DaFolder('https://www.instagram.com/p/B-f905NBl8P'),
         ),
       ),
     );
@@ -38,7 +38,7 @@ class DaFolder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Image.network(_url+'/media/?size=l'),
+      child: Image.network(_url + '/media/?size=l'),
     );
   }
 }
