@@ -12,7 +12,7 @@ class LandingPage extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
-                  color: Colors.black),
+                  color: Color.fromRGBO(145, 64, 55, 1)),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0),
@@ -20,7 +20,8 @@ class LandingPage extends StatelessWidget {
                 width: 400,
                 child: Text(
                   "We have taken each and every project handed over to us as a challenge, which has helped us achieve a high project success rate.",
-                  style: TextStyle(fontSize: 16.0, color: Colors.black),
+                  style: TextStyle(
+                      fontSize: 16.0, color: Color.fromRGBO(24, 49, 59, 1)),
                 ),
               ),
             ),
@@ -34,7 +35,7 @@ class LandingPage extends StatelessWidget {
                     vertical: 20.0, horizontal: 40.0),
                 child: Text(
                   "Our Packages",
-                  style: TextStyle(color: Colors.red),
+                  style: TextStyle(color: Color.fromRGBO(145, 64, 55, 1)),
                 ),
               ),
             ),
@@ -45,9 +46,8 @@ class LandingPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20.0),
         child: Container(
           child: Image.asset(
-            "assets/images/sample.png",
+            "assets/images/sample3.png",
             width: width,
-            height: 400,
           ),
         ),
       ),

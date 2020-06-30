@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:graphenoweb/LandingPage/LandingPage.dart';
 import 'package:graphenoweb/Navbar/Navbar.dart';
+import 'package:graphenoweb/Statebar/statebar.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,6 +25,7 @@ class MyHomePage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Navbar(),
+              Statebar(),
               Padding(
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 40.0),
