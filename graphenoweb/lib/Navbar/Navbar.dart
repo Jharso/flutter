@@ -32,37 +32,37 @@ class DesktopNavbar extends StatelessWidget {
             ),
             Row(
               children: <Widget>[
-                Text(
-                  "Soporte",
-                  style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Text(
-                  "Descargas",
-                  style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Text(
-                  "About us",
-                  style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                MaterialButton(
-                  color: Color.fromRGBO(221, 78, 8, 1),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  onPressed: () {},
-                  child: Text(
-                    '¡Comienza ya!',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
+                // Text(
+                //   "Soporte",
+                //   style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
+                // ),
+                // SizedBox(
+                //   width: 20,
+                // ),
+                // Text(
+                //   "Descargas",
+                //   style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
+                // ),
+                // SizedBox(
+                //   width: 20,
+                // ),
+                // Text(
+                //   "About us",
+                //   style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
+                // ),
+                // SizedBox(
+                //   width: 20,
+                // ),
+                // MaterialButton(
+                //   color: Color.fromRGBO(221, 78, 8, 1),
+                //   shape: RoundedRectangleBorder(
+                //       borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                //   onPressed: () {},
+                //   child: Text(
+                //     '¡Comienza ya!',
+                //     style: TextStyle(color: Colors.white),
+                //   ),
+                // ),
               ],
             ),
           ],
@@ -87,16 +87,16 @@ class MobileNavbar extends StatelessWidget {
                 child: Image.asset("assets/images/logo5.png"),
                 width: 150,
               ),
-              MaterialButton(
-                color: Color.fromRGBO(221, 78, 8, 1),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                onPressed: () {},
-                child: Text(
-                  '¡Comienza ya!',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
+              // MaterialButton(
+              //   color: Color.fromRGBO(221, 78, 8, 1),
+              //   shape: RoundedRectangleBorder(
+              //       borderRadius: BorderRadius.all(Radius.circular(20.0))),
+              //   onPressed: () {},
+              //   child: Text(
+              //     '¡Comienza ya!',
+              //     style: TextStyle(color: Colors.white),
+              //   ),
+              // ),
             ],
           ),
           Padding(
@@ -106,24 +106,24 @@ class MobileNavbar extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(
-                    "Soporte",
-                    style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Text(
-                    "Descargas",
-                    style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Text(
-                    "About us",
-                    style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
-                  ),
+                  // Text(
+                  //   "Soporte",
+                  //   style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
+                  // ),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // Text(
+                  //   "Descargas",
+                  //   style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
+                  // ),
+                  // SizedBox(
+                  //   width: 30,
+                  // ),
+                  // Text(
+                  //   "About us",
+                  //   style: TextStyle(color: Color.fromRGBO(24, 49, 59, 1)),
+                  // ),
                 ],
               ),
             ),

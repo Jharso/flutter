@@ -8,7 +8,7 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              "Software \nDevelopers",
+              "Desarrollo de \nSoftware",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
@@ -19,26 +19,26 @@ class LandingPage extends StatelessWidget {
               child: Container(
                 width: 400,
                 child: Text(
-                  "We have taken each and every project handed over to us as a challenge, which has helped us achieve a high project success rate.",
+                  "Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.",
                   style: TextStyle(
                       fontSize: 16.0, color: Color.fromRGBO(24, 49, 59, 1)),
                 ),
               ),
             ),
-            MaterialButton(
-              color: Colors.white,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(20.0))),
-              onPressed: () {},
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
-                child: Text(
-                  "Our Packages",
-                  style: TextStyle(color: Color.fromRGBO(145, 64, 55, 1)),
-                ),
-              ),
-            ),
+            // MaterialButton(
+            //   color: Colors.white,
+            //   shape: RoundedRectangleBorder(
+            //       borderRadius: BorderRadius.all(Radius.circular(20.0))),
+            //   onPressed: () {},
+            //   child: Padding(
+            //     padding: const EdgeInsets.symmetric(
+            //         vertical: 20.0, horizontal: 40.0),
+            //     child: Text(
+            //       "Our Packages",
+            //       style: TextStyle(color: Color.fromRGBO(145, 64, 55, 1)),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),

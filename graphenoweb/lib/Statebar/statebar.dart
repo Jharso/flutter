@@ -12,7 +12,7 @@ class Statebar extends StatelessWidget {
             child: Align(
               alignment: Alignment.center,
               child: Text(
-                'Texto informando sobre estado de servicio.',
+                '',
                 style: TextStyle(color: Colors.white),
               ),
             ),
