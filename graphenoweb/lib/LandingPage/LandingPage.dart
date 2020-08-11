@@ -7,17 +7,22 @@ class LandingPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              "Desarrollo de \nSoftware",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40.0,
-                  color: Color.fromRGBO(145, 64, 55, 1)),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 0, horizontal: 20.0),
+              child: Text(
+                "Desarrollo de \nSoftware",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40.0,
+                    color: Color.fromRGBO(145, 64, 55, 1)),
+              ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              padding:
+                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
               child: Container(
-                width: 400,
+                width: 380,
                 child: Text(
                   "Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.",
                   style: TextStyle(
