@@ -27,7 +27,7 @@ class DesktopNavbar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Container(
-              child: Image.asset("assets/images/logo5.png"),
+              child: Image.asset("assets/images/logo.png"),
               width: 150,
             ),
             Row(
@@ -84,7 +84,7 @@ class MobileNavbar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                child: Image.asset("assets/images/logo5.png"),
+                child: Image.asset("assets/images/logo.png"),
                 width: 150,
               ),
               // MaterialButton(

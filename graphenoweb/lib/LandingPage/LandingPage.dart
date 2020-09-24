@@ -9,7 +9,7 @@ class LandingPage extends StatelessWidget {
           children: <Widget>[
             Padding(
               padding:
-                  const EdgeInsets.symmetric(vertical: 0, horizontal: 20.0),
+                  const EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
               child: Text(
                 "Desarrollo de \nSoftware",
                 style: TextStyle(
@@ -51,7 +51,7 @@ class LandingPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20.0),
         child: Container(
           child: Image.asset(
-            "assets/images/sample3.png",
+            "assets/images/sample.png",
             width: width,
           ),
         ),
