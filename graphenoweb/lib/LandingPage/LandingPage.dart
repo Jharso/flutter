@@ -14,7 +14,7 @@ class LandingPage extends StatelessWidget {
                 "Desarrollo de \nSoftware",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 40.0,
+                    fontSize: 35.0,
                     color: Color.fromRGBO(145, 64, 55, 1)),
               ),
             ),
@@ -26,24 +26,10 @@ class LandingPage extends StatelessWidget {
                 child: Text(
                   "Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.",
                   style: TextStyle(
-                      fontSize: 16.0, color: Color.fromRGBO(24, 49, 59, 1)),
+                      fontSize: 14.0, color: Color.fromRGBO(24, 49, 59, 1)),
                 ),
               ),
             ),
-            // MaterialButton(
-            //   color: Colors.white,
-            //   shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.all(Radius.circular(20.0))),
-            //   onPressed: () {},
-            //   child: Padding(
-            //     padding: const EdgeInsets.symmetric(
-            //         vertical: 20.0, horizontal: 40.0),
-            //     child: Text(
-            //       "Our Packages",
-            //       style: TextStyle(color: Color.fromRGBO(145, 64, 55, 1)),
-            //     ),
-            //   ),
-            // ),
           ],
         ),
       ),
