@@ -27,8 +27,7 @@ class MyHomePage extends StatelessWidget {
               Navbar(),
               Statebar(),
               Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 20.0, horizontal: 40.0),
+                padding: const EdgeInsets.symmetric(horizontal: 40.0),
                 child: LandingPage(),
               ),
             ],

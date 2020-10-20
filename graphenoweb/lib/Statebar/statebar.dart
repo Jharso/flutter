@@ -7,8 +7,14 @@ class Statebar extends StatelessWidget {
       children: [
         Expanded(
           child: Container(
-            height: 100,
-            color: Color.fromRGBO(0, 76, 153, 1),
+            decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerRight,
+              end: Alignment.centerLeft,
+              colors: [Colors.black, Colors.blue[800]],
+            ),),
+            height: 40,
+            //color: Color.fromRGBO(0, 76, 153, 1),
             child: Align(
               alignment: Alignment.center,
               child: Text(
