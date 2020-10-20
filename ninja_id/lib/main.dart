@@ -4,87 +4,115 @@ void main() => runApp(MaterialApp(
   home: NinjaCard(),
 ));
 
-class NinjaCard extends StatelessWidget {
+class NinjaCard extends StatefulWidget {
+  @override
+  _NinjaCardState createState() => _NinjaCardState();
+}
+
+class _NinjaCardState extends State<NinjaCard> {
+
+  int ninjaLevel = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: Text("Prueba"),
+        title: Text("Ninja ID Card"),
         centerTitle: true,
         backgroundColor: Colors.grey[850],
+        elevation: 0.0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            ninjaLevel += 1;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.grey[800],
       ),
       body: Padding(
-        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                backgroundImage: NetworkImage('https://static.zerochan.net/Chun-Li.full.2930652.jpg'),
-                radius: 80.0,
+                backgroundImage: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtmp23hkSeAJF-xWHjik22VwbYnU5Eklq03w&usqp=CAU'),
+                radius: 100.0,
               ),
             ),
             Divider(
               height: 60.0,
-              color: Colors.grey[700],
+              color: Colors.grey[200],
             ),
             Text(
-              'Name',
+              'NAME',
               style: TextStyle(
                 color: Colors.grey,
-                letterSpacing: 2.0,
-              ),
+                letterSpacing: 2.0
+              )
             ),
-            SizedBox(height:10.0),
+            SizedBox(
+              height: 10.0,
+            ),
             Text(
               'Chun-Li',
               style: TextStyle(
-                color: Colors.yellow,
-                letterSpacing: 2.0,
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold,
-              ),
+                  color: Colors.amberAccent[200],
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold,
+              )
             ),
-            SizedBox( height: 30.0),
+            SizedBox(
+              height: 30.0,
+            ),
             Text(
-              'Current Ninja lvl',
-              style: TextStyle(
-                color: Colors.grey,
-                letterSpacing: 2.0,
-              ),
+                'Current Ninja Level',
+                style: TextStyle(
+                    color: Colors.grey,
+                    letterSpacing: 2.0
+                )
             ),
-            SizedBox(height:10.0),
-            Text(¿
-              '8',
-              style: TextStyle(
-                color: Colors.yellow,
-                letterSpacing: 2.0,
-                fontSize: 24.0,
-                fontWeight: FontWeight.bold,
-              ),
+            SizedBox(
+              height: 10.0,
             ),
-            SizedBox( height: 30.0),
+            Text(
+                '$ninjaLevel',
+                style: TextStyle(
+                  color: Colors.amberAccent[200],
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold,
+                )
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
             Row(
               children: <Widget>[
                 Icon(
                   Icons.email,
                   color: Colors.grey[400],
                 ),
-                SizedBox(width:20.0),
+                SizedBox(
+                  width: 10.0,
+                ),
                 Text(
-                  'Correo@ninja.cl',
+                  'Chun.li@ninja.co',
                   style: TextStyle(
                     color: Colors.grey[400],
                     fontSize: 18.0,
-                    letterSpacing: 1.0,
+                    letterSpacing: 1.0
                   ),
                 ),
               ],
-            )
-          ],
+            ),
+          ]
         ),
-      ),
+      )
     );
   }
 }
