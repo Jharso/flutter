@@ -1,65 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:graphenoweb/classes/landing_element.dart';
+import 'package:graphenoweb/templates/card_template.dart';
 
-class LandingPage extends StatelessWidget {
-  List<Widget> pageChildren(double width) {
-    return <Widget>[
-      Container(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 0, horizontal: 10.0),
-              child: Text(
-                "Desarrollo de \nSoftware",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35.0,
-                    color: Color.fromRGBO(145, 64, 55, 1)),
-              ),
-            ),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
-              child: Container(
-                width: 380,
-                child: Text(
-                  "Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.",
-                  style: TextStyle(
-                      fontSize: 14.0, color: Color.fromRGBO(24, 49, 59, 1)),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Container(
-          child: Image.asset(
-            "assets/images/sample.png",
-            width: width,
-          ),
-        ),
-      ),
-    ];
-  }
-
+class LandingPage extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth > 800) {
-          return Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: pageChildren(constraints.biggest.width / 2),
-          );
-        } else {
-          return Column(
-            children: pageChildren(constraints.biggest.width),
-          );
-        }
-      },
+  _LandingPageState createState() => _LandingPageState();
+}
+
+class _LandingPageState extends State<LandingPage> {
+  List<Lndimg> landimage = [
+    Lndimg(tittle: 'Desarrollo de \nSoftware', text: 'Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.', image: 'assets/images/image2.jpeg'),
+    Lndimg(tittle: 'Desarrollo de \nSoftware', text: 'Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.', image: 'assets/images/image3.jpeg'),
+    Lndimg(tittle: 'Desarrollo de \nSoftware', text: 'Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.', image: 'assets/images/image4.jpeg'),
+    Lndimg(tittle: 'Desarrollo de \nSoftware', text: 'Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.', image: 'assets/images/image5.jpeg'),
+
+  ];
+
+  Widget build(BuildContext context){
+    return Column(
+      children: landimage.map((aux) => CardTemplate(aux: aux)).toList(),
     );
   }
 }
