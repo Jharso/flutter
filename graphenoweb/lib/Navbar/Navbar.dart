@@ -28,9 +28,9 @@ class DesktopNavbar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Container(
-              child: Image.asset("assets/images/logo.png"),
+              child: Image.asset("assets/images/logo2.png"),
               width: 150,
-              ),
+            ),
           ],
         ),
       ),
@@ -48,7 +48,7 @@ class MobileNavbar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Container(
-              child: Image.asset("assets/images/logo.png"),
+              child: Image.asset("assets/images/logo2.png"),
               width: 150,
             ),
           ],

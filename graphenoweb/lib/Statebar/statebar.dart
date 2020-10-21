@@ -8,11 +8,12 @@ class Statebar extends StatelessWidget {
         Expanded(
           child: Container(
             decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerRight,
-              end: Alignment.centerLeft,
-              colors: [Colors.black, Colors.blue[800]],
-            ),),
+              gradient: LinearGradient(
+                begin: Alignment.centerRight,
+                end: Alignment.centerLeft,
+                colors: [Colors.black, Colors.blue[800]],
+              ),
+            ),
             height: 40,
             //color: Color.fromRGBO(0, 76, 153, 1),
             child: Align(
