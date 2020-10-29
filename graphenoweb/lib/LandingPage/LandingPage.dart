@@ -10,24 +10,24 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   List<Lndimg> landimage = [
     Lndimg(
-        tittle: 'Desarrollo de \nSoftware',
+        tittle: '',
         text:
-            'Leyenda de prueba para probar la presentación del texto descriptivo ,,,,,,,,,,Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.',
+            '',
         image: 'assets/images/image2.jpeg'),
     Lndimg(
-        tittle: 'Desarrollo de \nSoftware',
+        tittle: '',
         text:
-            ' todos los emprendedores del país.',
+            '',
         image: 'assets/images/image3.jpeg'),
     Lndimg(
-        tittle: 'Desarrollo de \nSoftware',
+        tittle: '',
         text:
-            'Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.',
+            '',
         image: 'assets/images/image4.jpeg'),
     Lndimg(
-        tittle: 'Desarrollo de \nSoftware',
+        tittle: '',
         text:
-            'Nuestro objetivo es desarrollar software que esté al alcance de todos los emprendedores del país.',
+            '',
         image: 'assets/images/image5.jpeg'),
   ];
 

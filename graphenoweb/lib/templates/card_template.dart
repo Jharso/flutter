@@ -10,35 +10,35 @@ class CardTemplate extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
-              child: Text(
-                aux.tittle,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35.0,
-                    color: Colors.grey[200]),
-              ),
-            ),
-            Padding(
-              padding:
-                  const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
-              child: Container(
-                color: Colors.orange.withOpacity(0.90),
-                width: 250,
-                child: Text(
-                  aux.text,
-                  style: TextStyle(fontSize: 14.0, color: Colors.black),
-                ),
-              ),
-            ),
-          ],
-        ),
+        // child: Column(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   crossAxisAlignment: CrossAxisAlignment.start,
+        //   children: <Widget>[
+        //     Padding(
+        //       padding:
+        //           const EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+        //       child: Text(
+        //         aux.tittle,
+        //         style: TextStyle(
+        //             fontWeight: FontWeight.bold,
+        //             fontSize: 35.0,
+        //             color: Colors.grey[200]),
+        //       ),
+        //     ),
+        //     Padding(
+        //       padding:
+        //           const EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
+        //       child: Container(
+        //        // color: Colors.orange.withOpacity(0.90),
+        //         width: 250,
+        //         child: Text(
+        //           aux.text,
+        //           style: TextStyle(fontSize: 14.0, color: Colors.black),
+        //         ),
+        //       ),
+        //     ),
+        //   ],
+        // ),
       ),
       Container(
         child: Image.asset(
@@ -63,7 +63,7 @@ class CardTemplate extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children:
-                      pageChildren((constraints.biggest.width / 2) - 200.0),
+                      pageChildren(710.0),
                 )),
           ),
           SizedBox(
