@@ -17,13 +17,12 @@ class WorldTime {                                    //crea clase WorldTime
       // generar la petición a la API pública
       Response response =               //almacena en variable "response" la información pedida en un objeto tipo "Response"
           await get('http://worldtimeapi.org/api/timezone/$url');  //await permite esperar la respuestas
-      Map data = jsonDecode(response.body);                        //quita comillas a los elementos del json
-      Response resp = await get('http://worldtimeapi.org/api/timezone/');
-      print(resp.body.length);
+      Map data = jsonDecode(response.body);
 
       // get properties from json
       String datetime = data['datetime'];
-      String offset = data['utc_offset'].substring(1, 3);
+      String offset = data['utc_offset'].substring(0, 3);
+      print(datetime);
 
       // create DateTime object
       DateTime now = DateTime.parse(datetime);

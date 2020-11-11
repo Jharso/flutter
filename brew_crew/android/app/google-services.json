@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "196324481390",
+    "firebase_url": "https://jarso-brew-crew.firebaseio.com",
+    "project_id": "jarso-brew-crew",
+    "storage_bucket": "jarso-brew-crew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196324481390:android:bdf0e3ac081502e47c097f",
+        "android_client_info": {
+          "package_name": "com.grapheno.brew_crew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196324481390-f3j16h76kmvte1q60dlnm8vp21sd8ljf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4EElup5UQhyMyU9ckXtrRpLvv1lOwsBQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196324481390-f3j16h76kmvte1q60dlnm8vp21sd8ljf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
